@@ -10,13 +10,13 @@ struct  RECTANGLE
 };
 int main()
 {
-    struct RECTANGLE r={5,5};
+    RECTANGLE r={5,5};
     r.length=10;//editing rectangle value
     cout<<"Structure Rectangle in stack and accessed using variable "<<r.length<<" "<<r.breath<<endl;
 
 
     //Now Using Pointer
-    struct RECTANGLE *p1=&r;
+    RECTANGLE *p1=&r;
     p1->length=2;//could even be (*p).length=2
     cout<<"Structure Rectangle in stack and accessed using pointer "<<p1->length<<" "<<p1->breath<<endl;
 
